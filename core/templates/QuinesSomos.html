@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<body>
+<div class="wrapper">
+	<div class="preloader"></div>
+
+	<!-- Main Header Nav --> 
+  {% include 'navbar2.html' %}
+  
+	<!-- Inner Page Breadcrumb -->
+	<section class="inner_page_breadcrumb">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-6">
+					<div class="breadcrumb_content">
+						<h2 class="breadcrumb_title">Quienes Somos</h2>
+						<ol class="breadcrumb">
+					    <li class="breadcrumb-item"><a href="#">Home</a></li>
+					    <li class="breadcrumb-item active" aria-current="page">About Us</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Text Content -->
+	<section class="about-section bb1 pb70">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2">
+					<div class="main-title text-center">
+            <img src="{% static 'images/prisma-vertical.svg' %}" alt="">
+						<h2>PRISMA</h2>
+						<p>promotora de inversión</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="about_thumb mb30-smd">
+						<img class="img-fluid w100" src="{% static 'images/about/reunion.jpg' %}" alt="2.jpg">
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="about_content">
+            <div style="margin-bottom: 40px; text-align: center;" class="heading-block">
+              <h3><u>Quienes somos</u></h3>
+            </div>
+						<p >SOMOS UNA EMPRESA 100% POTOSINA CUYO OBJETIVO ES QUE NUESTROS CLIENTES 
+ENCUENTREN LA MEJOR OPCION PARA INVERTIR
+SU PATRIMONIO O CAPITAL A TRAVES DE NUESTROS
+SERVICIOS, BRINDANDOLES SEGURIDAD Y UN
+RENDIMIENTO COMPETITIVO.</p>
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+				<div class="col-lg-6" style="background-color: #F5F5F5;">
+					<div class="row col-mb-50">
+            <div class="about_content">
+            <div style="margin-bottom: 40px; text-align: center;" class="heading-block">
+              <h3><u>MISIÓN</u></h3>
+            </div>
+            <p>SER UNA EMPRESA QUE AYUDE A RESOLVER LAS NECESIDADES DE NUESTROS CLIENTES, OFRECIENDO
+              LA MEJOR EXPERIENCIA EN PROYECTOS DE INVERSION, SUSTENTADA EN NUESTRA CAPACIDAD DE DESARROLLO Y 
+              NUESTRO ALCANCE, LOGRANDO DE ESTA FORMA IMPULSAR A NUESTROS CLIENTES A UN ENTORNO FINANCIERO FAVORABLE.
+            </p>
+            </div>
+					</div>
+				</div>
+				<div class="col-lg-6" style="background-color: #F5F5F5;">
+					<div class="about_thumb mb30-smd">
+						<img class="img-fluid w100" src="{% static 'images/about/equipo.jpg' %}" alt="2.jpg">
+					</div>
+				</div>
+			</div>
+
+      <div class="row">
+				<div class="col-lg-6">
+					<div class="about_thumb mb30-smd">
+						<img class="img-fluid w100" src="{% static 'images/about/vision1.jpg' %}" alt="2.jpg">
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="about_content">
+            <div style="margin-bottom: 40px; text-align: center;" class="heading-block">
+              <h3><u>VISIÓN</u></h3>
+            </div>
+            <p>SER RECONOCIDA COMO LA MEJOR EMPRESA PARA PROYECTOS DE INVERSION POR NUESTROS
+              CLIENTES, OFRECIENDO PORTAFOLIOS DE PROYECTOS QUE PERMITAN UN CRECIMIENTO INTEGRAL, DE ESTA
+              FORMA MAXIMIZAR LOS BENEFICIOS PARA LA EMPRESA, LOS INVERSIONISTAS Y LA SOCIEDAD.
+            </p>
+					</div>
+				</div>
+			</div>  
+      
+			<div class="row mt50">
+				<div class="col-md-6 col-lg-3">
+					<div class="funfact_one text-center">
+						<div class="details">
+							<div class="timer text-thm">10</div>
+							<p class="ff_title">De Experiencia En El Servicio</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+          <div class="funfact_one text-center">
+            <div class="details">
+              <div class="timer text-thm">100</div><p class="text-thm">%</p>
+              <p class="ff_title">Clientes satisfechos</p>
+            </div>
+          </div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+          <div class="funfact_one text-center">
+            <div class="details">
+              <div class="timer text-thm">10</div>
+              <p class="ff_title">De Experiencia en el servicio</p>
+            </div>
+          </div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+          <div class="funfact_one text-center">
+            <div class="details">
+              <div class="timer text-thm">100</div><p class="text-thm">%</p>
+              <p class="ff_title">clientes statisfechos</p>
+            </div>
+          </div>
+				</div>
+			</div>
+		</div>
+	</section>
+  
+  <!-- Our Team -->
+  <section class="our-team pb40 bb1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="main-title text-center">
+            <h2>Conoce A Nuestro Equipo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="team_slider_home1">
+            <div class="item">
+              <div class="team_member">
+                <div class="thumb"> <img class="img-fluid" src="images/team/persona.jpg" alt="1.jpg">
+                  <div class="overylay">
+                    <ul class="social_icon">
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="details">
+                  <h4><a href="page-agent-single.html">Robert Fox</a></h4>
+                  <p>Lead Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="team_member">
+                <div class="thumb"> <img class="img-fluid" src="images/team/persona.jpg" alt="2.jpg">
+                  <div class="overylay">
+                    <ul class="social_icon">
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="details">
+                  <h4><a href="page-agent-single.html">Floyd Miles</a></h4>
+                  <p>CEO, Director</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="team_member">
+                <div class="thumb"> <img class="img-fluid" src="images/team/persona.jpg" alt="3.jpg">
+                  <div class="overylay">
+                    <ul class="social_icon">
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="details">
+                  <h4><a href="page-agent-single.html">Albert Flores</a></h4>
+                  <p>Marketer</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="team_member">
+                <div class="thumb"> <img class="img-fluid" src="images/team/persona.jpg" alt="4.jpg">
+                  <div class="overylay">
+                    <ul class="social_icon">
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="details">
+                  <h4><a href="page-agent-single.html">Darlene Robertson</a></h4>
+                  <p>Project Manager</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="team_member">
+                <div class="thumb"> <img class="img-fluid" src="images/team/persona.jpg" alt="5.jpg">
+                  <div class="overylay">
+                    <ul class="social_icon">
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="details">
+                  <h4><a href="page-agent-single.html">Savannah Nguyen</a></h4>
+                  <p>Lead Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Property Cities -->
+  
+
+	<!-- Our Team -->
+	
+
+	<!-- Our Partners -->
+	
+
+	<!-- Our Footer -->
+  
+<a class="scrollToHome" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<!-- Wrapper End -->
+</body>
+</html>
+{% endblock %}

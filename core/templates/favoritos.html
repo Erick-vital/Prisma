@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+  {% include 'navbar2.html' %}
+<section class="our-listing pb30-991">
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="breadcrumb_content style2 mb100">
+            <h2 class="breadcrumb_title">Favoritos</h2>
+          </div>
+        </div>
+
+          <div class="row">
+            {% for favorito in favoritos %}
+            <div class="col-lg-6 col-xl-4">
+              <div class="feat_property">
+                    <div class="thumb">
+                    <img class="img-whp" src="{{ favorito.inmueble.imagen.url }}" alt="fl1.jpg">
+                    
+                    <div class="thmb_cntnt2">
+                        <ul class="listing_gallery mb0">
+                        <li class="list-inline-item"><a class="text-white" href="#"><span class="flaticon-photo-camera mr5"></span> 22</a></li>
+                        <li class="list-inline-item"><a class="text-white" href="#"><span class="flaticon-play-button mr5"></span> 3</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="details">
+                    <div class="tc_content">
+                        <h4><a href="page-listing-single-v8.html">{{ favorito.inmueble.nombre }}</a></h4>
+                        <p>251 SW 6th Ln Florida City, FL</p>
+                        <ul class="prop_details mb0">
+                        <li class="list-inline-item"><a href="#"><span class="flaticon-bed"></span> <br>4 Cuartos</a></li>
+                        <li class="list-inline-item"><a href="#"><span class="flaticon-bath"></span> <br>5 Baños</a></li>
+                        <li class="list-inline-item"><a href="#"><span class="flaticon-car"></span> <br>1 Garage</a></li>
+                        <li class="list-inline-item"><a href="#"><span class="flaticon-ruler"></span> <br>1200 M2</a></li>
+                        </ul>
+                    </div>
+                    <div class="fp_footer">
+                        <ul class="fp_meta float-left mb0">
+                        <li class="list-inline-item">
+                            <a href="#">
+                            <small><del class="body-color">$2,800/mo</del></small><br>
+                            <span class="heading-color fw600">$2,300/mo</span>
+                            </a>
+                        </li>
+                        </ul>
+                        <ul class="fp_meta float-right mb0">
+                        <li class="list-inline-item"><a class="icon" href="#"><span class="flaticon-resize"></span></a></li>
+                        <li class="list-inline-item"><a class="icon" href="#"><span class="flaticon-add"></span></a></li>
+                        <li class="list-inline-item">
+                          <a href="{% url 'eliminar' favorito.id %}"><button class="btn btn-outline-danger">Borrar</button></a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

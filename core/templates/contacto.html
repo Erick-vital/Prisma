@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block content %}
+<head>
+<style>
+.contact_icon_box{
+  position: relative;
+}
+.contact_icon_box .icon{
+  background-color: rgba(0, 97, 223, .03);
+  border-radius: 50%;
+  height: 70px;
+  line-height: 70px;
+  margin-right: 20px;
+  text-align: center;
+  width: 70px;
+}
+.contact_icon_box .icon span{
+  color: #0061DF;
+  font-size: 24px;
+}
+.contact_icon_box .details .title{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.contact_icon_box .details p{
+  font-size: 14px;
+  line-height: 30px;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+	<div class="preloader"></div>
+
+	<!-- Main Header Nav --> 
+  {% include 'navbar2.html' %}
+
+  
+  <!-- Modal -->
+  
+
+	<!-- Main Header Nav For Mobile -->
+	
+
+	<!-- Inner Page Breadcrumb -->
+	<section class="inner_page_breadcrumb">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-6">
+					<div class="breadcrumb_content">
+						<h2 class="breadcrumb_title">Contactanos</h2>
+						<ol class="breadcrumb">
+					    <li class="breadcrumb-item"><a href="#">Home</a></li>
+					    <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Contact -->
+  <section class="our-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="main-title text-center">
+            <h2>Ponte en contacto con nosotros</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4 col-xl-3 pr0 pl0 plpr15-lg">
+          <div class="contact_icon_box mb50">
+            <div class="icon float-left"><span class="flaticon-map"></span></div>
+            <div class="details">
+              <h5 class="title">Direccion</h5>
+              <p>Amado Nervo 1590<br>Colonia polanco</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="contact_icon_box mb50">
+            <div class="icon float-left"><span class="flaticon-phone"></span></div>
+            <div class="details">
+              <h5 class="title">Contacto</h5>
+              <p>Telefono: +52 444118 0905<br>Email: support@houzing.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 pr0 pl0 plpr15-lg">
+          <div class="contact_icon_box mb50">
+            <div class="icon float-left"><span class="flaticon-clock"></span></div>
+            <div class="details">
+              <h5 class="title">Horario</h5>
+              <p>Lunes - Viernes: 09:00 - 20:00<br>Sabado & Domingo: 10:30 - 22:00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="h550" id="map-canvas">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.353440065607!2d-101.0100640846822!3d22.15061438078198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a9f334ecb64bb%3A0x3d23579adf2134e3!2sAmado%20Nervo%201590%2C%20Jacarandas%2C%2078148%20San%20Luis%2C%20S.L.P.!5e0!3m2!1ses-419!2smx!4v1634598626201!5m2!1ses-419!2smx" width="1400" height="600" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+          <!-- formulario -->
+          <div class="form_grid mt100">
+            <h2 class="text-center mb50">Envianos Un Mensaje</h2>
+            <form class="contact_form" name="contact_form" action="#" method="post" novalidate>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input name="form_name" class="form-control" required="required" type="text" placeholder="Nombre">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input name="form_email" class="form-control required email" required="required" type="email" placeholder="Correo Electronico">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <textarea name="form_message" class="form-control required" rows="6" required placeholder="Envianos Tu Mensaje"></textarea>
+                  </div>
+                  <div class="form-group mb0">
+                    <button type="button" class="btn btn-thm">ENVIAR</button>
+                  <button style="display: inline-block;" class="btn btn-block btn-whatsapp mb0"><a href="https://api.whatsapp.com/send?phone=524441180905&text=Hola%20me%20gustaria%20mas%20informacion%20sobre%20el%20inmueble">WHATSAPP</a></button>
+                  </div>
+                  <br>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+	<!-- Our Footer -->
+  
+<a class="scrollToHome" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<!-- Wrapper End -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM&callback=initMap"></script>
+<script src="js/googlemaps1.js"></script>
+<!-- Custom script for all pages --> 
+</body>
+</html>
+{% endblock %}
